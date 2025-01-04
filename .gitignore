@@ -3,3 +3,7 @@
 
 # But not these files...
 !.gitignore
+!marshalltown_tax_rate.html
+!marshalltown_lowest_25_percent_tax_rate.html
+!marshalltown_top_25_percent_tax_rate.html
+!marshalltown_top_100_tax_rate.html
