@@ -13,18 +13,39 @@
     <title>Marshalltown, IA Tax Rates Maps</title>
 </head>
     <body class="bg-light">
-        <div class="d-flex justify-content-center align-items-center vh-100">
-            <div class="text-center">
-                <h1>Marshalltown, IA Data</h1>
-                <p>Created by Marco A. Yepez-Gomez. Not affiliated with or employed by Marshalltown, IA. The 2023 city data was provided by the kind staff of Marshalltown.<br>
-                This project is meant to be lived and enjoyed in the public domain for educational purposes</p>
-                <h2>Tax Rates Maps</h2>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="marshalltown_tax_rate.html" class="text-decoration-none text-primary">Marshalltown Full Tax Rates Map</a></li>
-                    <li class="mb-2"><a href="marshalltown_lowest_25_percent_tax_rate.html" class="text-decoration-none text-primary">Marshalltown Lowest 25 Percent Tax Rates Map</a></li>
-                    <li class="mb-2"><a href="marshalltown_top_25_percent_tax_rate.html" class="text-decoration-none text-primary">Marshalltown Top 25 Percent Tax Rates Map</a></li>
-                    <li class="mb-2"><a href="marshalltown_top_100_tax_rate.html" class="text-decoration-none text-primary">Marshalltown Top 100 Tax Rates Map</a></li>
-                </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Marshalltown, IA Data</h1>
+                    <p>
+                        Created by Marco A. Yepez-Gomez. Not affiliated with or employed by Marshalltown, IA. This project is meant to be lived and enjoyed in the public
+                        domain for educational purposes
+                    </p>
+                    <h2>Tax Rates</h2>
+                    <h3>Background</h3>
+                    <p>
+                        One of the motivations for retrieving this data and 3D visualizing it in maps was so the public and their representatives could see the tax rates
+                        of the City of Marshalltown in a more pleasant manner than traditional views like a CSV file. One of my dream goals is to help representatives in
+                        power understand what areas have flourished to become valuable properties and contribute to the wealth of Marshalltown, IA, and also see
+                        which areas are struggling to develop into properties that become strong contributors to the city.
+                    </p>
+                    <h3>Data</h3>
+                    <p>
+                        The City of Marshalltown and Marshall County staff were kind enough to provide the 2023 ~11,000 records information in CSV files: parcel IDs,
+                        acres, addresses, and property tax totals data. The data was not ready to be processed immediately and needed to be cleaned. Cleaning involved
+                        removing about 500 records due to the data being hard to properly make sense of without making personal guesses. Tools like Google Spreadsheet
+                        and Python scripting were used to clean the data at a scale and about 500 records were manually cleaned using Google Maps and the web
+                        application Beacon. The work can be verified using the parcel IDs or addresses when highlighting records on the map and the Beacon
+                        application available to the public.
+                    </p>
+                    <h3>Maps</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="marshalltown_tax_rate.html" class="text-decoration-none text-primary">Marshalltown Full Tax Rates</a></li>
+                        <li class="mb-2"><a href="marshalltown_lowest_25_percent_tax_rate.html" class="text-decoration-none text-primary">Marshalltown Lowest 25 Percent Tax Rates</a></li>
+                        <li class="mb-2"><a href="marshalltown_top_25_percent_tax_rate.html" class="text-decoration-none text-primary">Marshalltown Top 25 Percent Tax Rates</a></li>
+                        <li class="mb-2"><a href="marshalltown_top_100_tax_rate.html" class="text-decoration-none text-primary">Marshalltown Top 100 Tax Rates</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </body>
