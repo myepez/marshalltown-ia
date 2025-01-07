@@ -33,10 +33,10 @@
     const container = document.getElementById('deck-container');
     const jsonInput = {
   "initialViewState": {
-    "bearing": 60,
+    "bearing": 15,
     "latitude": 42.039701035095426,
     "longitude": -92.91615280871022,
-    "pitch": 60,
+    "pitch": 30,
     "zoom": 12
   },
   "layers": [
@@ -91467,14 +91467,14 @@
           "Tax_Rate": 0.0
         }
       ],
-      "elevationScale": 0.03,
+      "elevationScale": 0.05,
       "extruded": true,
       "getElevation": "@@=Tax_Rate",
-      "getFillColor": "@@=[255, (1 - Tax_Rate / 22600) * 255, 0]",
+      "getFillColor": "@@=[255, (1 - Tax_Rate / 22080) * 255, 0]",
       "getPosition": "@@=[Longitude, Latitude]",
-      "id": "ae669d77-19cf-4d15-b644-650167a9c50d",
+      "id": "9b71d2e2-290e-4aa8-a31d-98802df3c11d",
       "pickable": true,
-      "radius": 25
+      "radius": 50
     }
   ],
   "mapProvider": "carto",
