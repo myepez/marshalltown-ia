@@ -28,16 +28,35 @@
   <body>
     <div id="deck-container">
     </div>
-  </body>
+  
+<script>
+  const deckgl = deckInstance.deckgl;  // Access the Deck.gl instance
+  let bearing = 0;  // Start at 0 degrees
+
+  function rotateMap() {
+    bearing = (bearing + 1) % 360;  // Increment bearing, wrap around at 360
+    deckgl.setProps({
+      viewState: {
+        ...deckgl.viewState,
+        bearing: bearing,  // Update bearing
+        transitionDuration: 50  // Smooth animation
+      }
+    });
+    requestAnimationFrame(rotateMap);  // Continue animation
+  }
+
+  rotateMap();  // Start the animation loop
+</script>
+</body>
   <script>
     const container = document.getElementById('deck-container');
     const jsonInput = {
   "initialViewState": {
-    "bearing": 15,
+    "bearing": 35,
     "latitude": 42.039701035095426,
     "longitude": -92.91615280871022,
-    "pitch": 30,
-    "zoom": 12
+    "pitch": 60,
+    "zoom": 13
   },
   "layers": [
     {
@@ -91472,9 +91491,9 @@
       "getElevation": "@@=Tax_Rate",
       "getFillColor": "@@=[255, (1 - Tax_Rate / 22080) * 255, 0]",
       "getPosition": "@@=[Longitude, Latitude]",
-      "id": "9b71d2e2-290e-4aa8-a31d-98802df3c11d",
+      "id": "4ac2bb77-f613-404e-8f70-2eacb44b3bee",
       "pickable": true,
-      "radius": 50
+      "radius": 35
     }
   ],
   "mapProvider": "carto",
